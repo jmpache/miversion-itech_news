@@ -1,8 +1,10 @@
 <section class="home">
   {{#each posts}}
     <article>
-      <h1>{{title}}</h1>
-      <p>{{body}}</p>
+      <h2><img class="image" src="{{ picture }}">  {{title}}</h2>
+      <h4>Publicado por {{ author }} ({{ date }}).</h4>
+      <p><i>{{extract}}</i></p>
+      {{ post }}      
     </article>
   {{/each}}
 </section>

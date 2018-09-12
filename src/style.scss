@@ -182,3 +182,28 @@ header {
     flex-direction: column;
   }
 }
+
+.loader {
+  display: block;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.image {
+  height: 18px;
+  width: 18px;
+  display: inline;
+}

@@ -1,4 +1,5 @@
 import * as axios from 'axios';
+import { sectionWrapperDOM } from '../app.js';
 
 document.querySelector('#newsletter-btn').addEventListener('click', evt => {
   const emailDOM = document.querySelector('#newsletter-email');
@@ -15,4 +16,4 @@ document.querySelector('#newsletter-btn').addEventListener('click', evt => {
       // handle error
       console.log(error);
     });
-});
+  });
